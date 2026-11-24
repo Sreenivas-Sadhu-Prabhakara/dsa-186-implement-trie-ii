@@ -12,6 +12,13 @@ Replace `isWord` with `wordCount` and add `passCount` maintained on every node a
 
 **Complexity:** all operations O(len(word)); space O(total characters).
 
+## Visual walkthrough
+
+Read the picture top to bottom — each numbered frame is one moment of the algorithm
+running on this repo's test example.
+
+![Step-by-step visual walkthrough](viz.svg)
+
 ## Run
 
     go test ./...   # verify

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="402" viewBox="0 0 760 402" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="400.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Trie II — count passers-by and enders, allow erase</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Same trie, now with COUNTS: every node tracks how many words pass through it (prefix</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">count) and how many end there. Insert "apple" twice and "app" once.</text>
+<rect x="24.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="51.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">•</text>
+<line x1="78.0" y1="132.0" x2="102.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="135.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">a</text>
+<line x1="162.0" y1="132.0" x2="186.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="219.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">p</text>
+<line x1="246.0" y1="132.0" x2="270.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="276.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="303.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">p</text>
+<line x1="330.0" y1="132.0" x2="354.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="360.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="387.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">l</text>
+<line x1="414.0" y1="132.0" x2="438.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="444.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="471.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">e</text>
+<line x1="492.0" y1="132.0" x2="514.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="526.0" y="137.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#64748b" text-anchor="middle">∅</text>
+<line x1="24.0" y1="164.0" x2="736.0" y2="164.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="184.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="188.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="189.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">countWordsEqualTo("apple") reads the end-counter: 2. countWordsStartingWith("app")</text>
+<text x="56.0" y="208.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">reads the pass-counter at p: 3 (both apples + app itself).</text>
+<text x="72.0" y="243.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">queries</text>
+<rect x="84.0" y="224.0" width="180.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="174.0" y="243.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">equalTo(apple) → 2</text>
+<rect x="274.0" y="224.0" width="189.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="368.5" y="243.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">startsWith(app) → 3</text>
+<line x1="24.0" y1="268.0" x2="736.0" y2="268.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="288.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="292.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="293.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">erase decrements the counters along the path — no node deletion needed; zero-count</text>
+<text x="56.0" y="312.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">nodes are simply dead weight. Counters turn the trie from a set into a multiset.</text>
+<text x="72.0" y="347.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">mutation</text>
+<rect x="84.0" y="328.0" width="414.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="291.0" y="347.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">after erase(apple) → equalTo 1, startsWith 2</text>
+<text x="380.0" y="384.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
